@@ -26,16 +26,16 @@ from Professor.views import ProfessorView
 from Turma.views import TurmaView
 
 rotas = routers.DefaultRouter()
-rotas.register(r'aluno', AlunoView, basename='Aluno'),
-rotas.register(r'curso', CursoView, basename='Curso'),
-rotas.register(r'detalheCurso', DetalheCursoView, basename='DetalheCurso'),
-rotas.register(r'detalheDisciplina', DetalheDisciplinaView, basename='DetalheDisciplina'),
-rotas.register(r'detalheTurma', DetalheTurmaView, basename='DetalheTurma'),
-rotas.register(r'disciplina', DisciplinaView, basename='Disciplina'),
-rotas.register(r'professor', ProfessorView, basename='Professor'),
-rotas.register(r'turma', TurmaView, basename='Turma'),
+rotas.register(r'Aluno', AlunoView, basename='Aluno'),
+rotas.register(r'Curso', CursoView, basename='Curso'),
+rotas.register(r'DetalheCurso', DetalheCursoView, basename='DetalheCurso'),
+rotas.register(r'DetalheDisciplina', DetalheDisciplinaView, basename='DetalheDisciplina'),
+rotas.register(r'DetalheTurma', DetalheTurmaView, basename='DetalheTurma'),
+rotas.register(r'Disciplina', DisciplinaView, basename='Disciplina'),
+rotas.register(r'Professor', ProfessorView, basename='Professor'),
+rotas.register(r'Turma', TurmaView, basename='Turma'),
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(rotas.urls)),
+    path('api/',include (rotas.urls)),
 ]
