@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from .models import DetalheCurso
+from DetalheCurso.detalheCursoserializer import DetalheCursoSerializer
 
-# Create your views here.
+class DetalheCursoView(viewsets.ModelViewSet):
+    queryset = DetalheCurso.objects.all()
+    serializer_class = DetalheCursoSerializer

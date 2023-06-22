@@ -4,6 +4,6 @@ from django.db import models
 
 class DetalheTurma(models.Model):
     
-    codigoAluno = models.IntegerField(max_length=100)
-    codigoProfessor = models.IntegerField(max_length=100)
-    codigoTurma = models.IntegerField(max_length=100)
+    codigoAluno = models.IntegerField()
+    codigoProfessor = models.IntegerField()
+    codigoTurma = models.IntegerField()

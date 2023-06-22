@@ -4,5 +4,5 @@ from django.db import models
 
 class DetalheDisciplina(models.Model):
     
-    codigoCurso = models.IntegerField(max_length=100)
-    codigoDisciplina = models.IntegerField(max_length=100)
+    codigoCurso = models.IntegerField()
+    codigoDisciplina = models.IntegerField()
